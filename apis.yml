@@ -1,8 +1,24 @@
 aid: bilt-rewards
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bilt-rewards.png
 name: Bilt Rewards
-description: 'Bilt Rewards is a company surfaced as a portfolio company of fifth-wall, general-catalyst,
-  prosus-ventures and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Bilt Rewards (Bilt Technologies) is a fintech membership and loyalty program that lets
+  renters and homeowners earn transferable points on rent and mortgage payments, with no fees, and
+  redeem them for travel, everyday purchases, fitness, dining, or credit toward a future home down
+  payment. Members also unlock benefits across 50,000+ neighborhood merchants and can use the co-branded
+  Bilt Mastercard. Bilt operates regulated entities Bilt Payments LLC (money transmission) and Bilt
+  Mortgages LLC (mortgage brokerage). The company is a consumer-facing app and card program; as of this
+  enrichment pass it publishes no public developer API, developer portal, or API documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/bilt-rewards/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Rewards
+- Loyalty
+- Payments
+- Rent
+- Mortgage
+- Credit Cards
+- Membership
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/bilt-rewards-trust-center.yml
+- type: Compliance
+  url: https://app.drata.com/trust/9cbf992e-0c38-11ee-865f-029d78a187d9
+- type: DomainSecurity
+  url: security/bilt-rewards-domain-security.yml
 - type: Website
-  url: https://www.biltrewards.com/
+  url: https://www.bilt.com/
+- type: Support
+  url: https://biltrewards.zendesk.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://legal.biltrewards.com/policies
+- type: TermsOfService
+  url: https://www.biltrewards.com/terms
+- type: Blog
+  url: https://newsroom.biltrewards.com/
+- type: Licensing
+  url: https://www.bilt.com/legal/licenses
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
